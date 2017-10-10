@@ -1,0 +1,68 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "caprice", "caprice.vcproj", "{5F8BC03E-1A66-42CC-AAC7-3946A694CEA8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{100DFDEF-9789-4D31-9CA3-BCFA8F982001} = {100DFDEF-9789-4D31-9CA3-BCFA8F982001}
+		{D15819C6-E96A-4634-91A0-26782D4D78B6} = {D15819C6-E96A-4634-91A0-26782D4D78B6}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "capricelib", "capricelib.vcproj", "{D15819C6-E96A-4634-91A0-26782D4D78B6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{100DFDEF-9789-4D31-9CA3-BCFA8F982001} = {100DFDEF-9789-4D31-9CA3-BCFA8F982001}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlib", "..\zlib\zlib.vcproj", "{100DFDEF-9789-4D31-9CA3-BCFA8F982001}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		Static Debug = Static Debug
+		Static Release = Static Release
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{5F8BC03E-1A66-42CC-AAC7-3946A694CEA8}.Debug.ActiveCfg = Debug|Win32
+		{5F8BC03E-1A66-42CC-AAC7-3946A694CEA8}.Debug.Build.0 = Debug|Win32
+		{5F8BC03E-1A66-42CC-AAC7-3946A694CEA8}.Release.ActiveCfg = Release|Win32
+		{5F8BC03E-1A66-42CC-AAC7-3946A694CEA8}.Release.Build.0 = Release|Win32
+		{5F8BC03E-1A66-42CC-AAC7-3946A694CEA8}.Static Debug.ActiveCfg = Debug|Win32
+		{5F8BC03E-1A66-42CC-AAC7-3946A694CEA8}.Static Debug.Build.0 = Debug|Win32
+		{5F8BC03E-1A66-42CC-AAC7-3946A694CEA8}.Static Release.ActiveCfg = Release|Win32
+		{5F8BC03E-1A66-42CC-AAC7-3946A694CEA8}.Static Release.Build.0 = Release|Win32
+		{5F8BC03E-1A66-42CC-AAC7-3946A694CEA8}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{5F8BC03E-1A66-42CC-AAC7-3946A694CEA8}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{5F8BC03E-1A66-42CC-AAC7-3946A694CEA8}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{5F8BC03E-1A66-42CC-AAC7-3946A694CEA8}.Unicode Release.Build.0 = Unicode Release|Win32
+		{D15819C6-E96A-4634-91A0-26782D4D78B6}.Debug.ActiveCfg = Debug|Win32
+		{D15819C6-E96A-4634-91A0-26782D4D78B6}.Debug.Build.0 = Debug|Win32
+		{D15819C6-E96A-4634-91A0-26782D4D78B6}.Release.ActiveCfg = Release|Win32
+		{D15819C6-E96A-4634-91A0-26782D4D78B6}.Release.Build.0 = Release|Win32
+		{D15819C6-E96A-4634-91A0-26782D4D78B6}.Static Debug.ActiveCfg = Debug|Win32
+		{D15819C6-E96A-4634-91A0-26782D4D78B6}.Static Debug.Build.0 = Debug|Win32
+		{D15819C6-E96A-4634-91A0-26782D4D78B6}.Static Release.ActiveCfg = Release|Win32
+		{D15819C6-E96A-4634-91A0-26782D4D78B6}.Static Release.Build.0 = Release|Win32
+		{D15819C6-E96A-4634-91A0-26782D4D78B6}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{D15819C6-E96A-4634-91A0-26782D4D78B6}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{D15819C6-E96A-4634-91A0-26782D4D78B6}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{D15819C6-E96A-4634-91A0-26782D4D78B6}.Unicode Release.Build.0 = Unicode Release|Win32
+		{100DFDEF-9789-4D31-9CA3-BCFA8F982001}.Debug.ActiveCfg = Debug|Win32
+		{100DFDEF-9789-4D31-9CA3-BCFA8F982001}.Debug.Build.0 = Debug|Win32
+		{100DFDEF-9789-4D31-9CA3-BCFA8F982001}.Release.ActiveCfg = Release|Win32
+		{100DFDEF-9789-4D31-9CA3-BCFA8F982001}.Release.Build.0 = Release|Win32
+		{100DFDEF-9789-4D31-9CA3-BCFA8F982001}.Static Debug.ActiveCfg = Static Debug|Win32
+		{100DFDEF-9789-4D31-9CA3-BCFA8F982001}.Static Debug.Build.0 = Static Debug|Win32
+		{100DFDEF-9789-4D31-9CA3-BCFA8F982001}.Static Release.ActiveCfg = Static Release|Win32
+		{100DFDEF-9789-4D31-9CA3-BCFA8F982001}.Static Release.Build.0 = Static Release|Win32
+		{100DFDEF-9789-4D31-9CA3-BCFA8F982001}.Unicode Debug.ActiveCfg = Debug|Win32
+		{100DFDEF-9789-4D31-9CA3-BCFA8F982001}.Unicode Debug.Build.0 = Debug|Win32
+		{100DFDEF-9789-4D31-9CA3-BCFA8F982001}.Unicode Release.ActiveCfg = Release|Win32
+		{100DFDEF-9789-4D31-9CA3-BCFA8F982001}.Unicode Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

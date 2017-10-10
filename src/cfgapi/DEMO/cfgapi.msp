@@ -1,0 +1,93 @@
+[Project]
+name=cfgapi
+type=0
+defaultConfig=1
+
+[Debug]
+// compiler 
+workingDirectory=
+arguments=
+intermediateFilesDirectory=Debug
+outputFilesDirectory=Debug
+compilerPreprocessor=
+extraCompilerOptions=-x c
+compilerIncludeDirectory=..\..\ioapi
+noWarning=0
+defaultWarning=0
+allWarning=1
+extraWarning=0
+isoWarning=0
+warningsAsErrors=0
+debugType=1
+debugLevel=2
+exceptionEnabled=1
+runtimeTypeEnabled=1
+optimizeLevel=0
+
+// linker
+libraryPath=
+outputFilename=BIN\cfgapi_gnu_d.exe
+libraries=
+extraLinkerOptions=
+ignoreStartupFile=0
+ignoreDefaultLibs=0
+stripExecutableFile=0
+
+// archive
+extraArchiveOptions=
+
+//resource
+resourcePreprocessor=
+resourceIncludeDirectory=
+extraResourceOptions=
+
+[Release]
+// compiler 
+workingDirectory=
+arguments=
+intermediateFilesDirectory=Release
+outputFilesDirectory=Release
+compilerPreprocessor=
+extraCompilerOptions=-x c
+compilerIncludeDirectory=..\..\ioapi
+noWarning=0
+defaultWarning=0
+allWarning=1
+extraWarning=1
+isoWarning=0
+warningsAsErrors=0
+debugType=0
+debugLevel=1
+exceptionEnabled=1
+runtimeTypeEnabled=1
+optimizeLevel=2
+
+// linker
+libraryPath=
+outputFilename=BIN\cfgapi_gnu.exe
+libraries=
+extraLinkerOptions=
+ignoreStartupFile=0
+ignoreDefaultLibs=0
+stripExecutableFile=1
+
+// archive
+extraArchiveOptions=
+
+//resource
+resourcePreprocessor=
+resourceIncludeDirectory=
+extraResourceOptions=
+
+[Source]
+1=main.c
+2=..\cfg_file.c
+3=..\..\IOAPI\UNZIP\ioapi.c
+4=..\cfg_reg.c
+5=..\..\IOAPI\ioapiw.c
+[Header]
+1=..\cfg_file.h
+2=..\cfgapi.h
+[Resource]
+[Other]
+[History]

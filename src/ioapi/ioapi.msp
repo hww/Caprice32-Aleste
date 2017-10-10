@@ -1,0 +1,89 @@
+[Project]
+name=ioapi
+type=3
+defaultConfig=1
+
+
+[Debug]
+// compiler 
+workingDirectory=
+arguments=
+intermediateFilesDirectory=..\debug\ioapi\gcc
+outputFilesDirectory=..\debug\ioapi\gcc
+compilerPreprocessor=
+extraCompilerOptions=-x c
+compilerIncludeDirectory=..\zlib
+noWarning=0
+defaultWarning=0
+allWarning=1
+extraWarning=0
+isoWarning=0
+warningsAsErrors=0
+debugType=1
+debugLevel=2
+exceptionEnabled=0
+runtimeTypeEnabled=0
+optimizeLevel=0
+
+// linker
+libraryPath=
+outputFilename=..\lib\ioapi_d.a
+libraries=
+extraLinkerOptions=
+ignoreStartupFile=40
+ignoreDefaultLibs=6
+stripExecutableFile=139
+
+// archive
+extraArchiveOptions=
+
+//resource
+resourcePreprocessor=
+resourceIncludeDirectory=
+extraResourceOptions=
+
+[Release]
+// compiler 
+workingDirectory=
+arguments=
+intermediateFilesDirectory=..\release\ioapi\gcc
+outputFilesDirectory=..\release\ioapi\gcc
+compilerPreprocessor=
+extraCompilerOptions=-x c
+compilerIncludeDirectory=..\zlib
+noWarning=0
+defaultWarning=0
+allWarning=1
+extraWarning=0
+isoWarning=0
+warningsAsErrors=0
+debugType=0
+debugLevel=1
+exceptionEnabled=0
+runtimeTypeEnabled=0
+optimizeLevel=2
+
+// linker
+libraryPath=
+outputFilename=..\lib\ioapi.a
+libraries=
+extraLinkerOptions=
+ignoreStartupFile=0
+ignoreDefaultLibs=0
+stripExecutableFile=0
+
+// archive
+extraArchiveOptions=
+
+//resource
+resourcePreprocessor=
+resourceIncludeDirectory=
+extraResourceOptions=
+
+[Source]
+1=unzip\ioapi.c
+2=ioapiw.c
+[Header]
+[Resource]
+[Other]
+[History]

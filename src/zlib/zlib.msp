@@ -1,0 +1,96 @@
+[Project]
+name=zlib
+type=3
+defaultConfig=1
+
+
+[Debug]
+// compiler 
+workingDirectory=
+arguments=
+intermediateFilesDirectory=..\debug\zlib\gcc
+outputFilesDirectory=..\debug\zlib\gcc
+compilerPreprocessor=
+extraCompilerOptions=-x c
+compilerIncludeDirectory=
+noWarning=0
+defaultWarning=0
+allWarning=1
+extraWarning=0
+isoWarning=0
+warningsAsErrors=0
+debugType=1
+debugLevel=2
+exceptionEnabled=0
+runtimeTypeEnabled=0
+optimizeLevel=0
+
+// linker
+libraryPath=
+outputFilename=..\lib\libz_d.a
+libraries=
+extraLinkerOptions=
+ignoreStartupFile=40
+ignoreDefaultLibs=6
+stripExecutableFile=139
+
+// archive
+extraArchiveOptions=
+
+//resource
+resourcePreprocessor=
+resourceIncludeDirectory=
+extraResourceOptions=
+
+[Release]
+// compiler 
+workingDirectory=
+arguments=
+intermediateFilesDirectory=..\release\zlib\gcc
+outputFilesDirectory=..\release\zlib\gcc
+compilerPreprocessor=
+extraCompilerOptions=-x c
+compilerIncludeDirectory=
+noWarning=0
+defaultWarning=0
+allWarning=1
+extraWarning=0
+isoWarning=0
+warningsAsErrors=0
+debugType=0
+debugLevel=1
+exceptionEnabled=0
+runtimeTypeEnabled=0
+optimizeLevel=2
+
+// linker
+libraryPath=
+outputFilename=..\lib\libz.a
+libraries=
+extraLinkerOptions=
+ignoreStartupFile=0
+ignoreDefaultLibs=0
+stripExecutableFile=0
+
+// archive
+extraArchiveOptions=
+
+//resource
+resourcePreprocessor=
+resourceIncludeDirectory=
+extraResourceOptions=
+
+[Source]
+1=adler32.c
+2=compress.c
+3=crc32.c
+4=deflate.c
+5=inffast.c
+6=inflate.c
+7=inftrees.c
+8=trees.c
+9=zutil.c
+[Header]
+[Resource]
+[Other]
+[History]

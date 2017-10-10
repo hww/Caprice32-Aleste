@@ -1,0 +1,88 @@
+[Project]
+name=ioapi
+type=0
+defaultConfig=1
+
+[Debug]
+// compiler 
+workingDirectory=
+arguments=
+intermediateFilesDirectory=debug
+outputFilesDirectory=debug
+compilerPreprocessor=
+extraCompilerOptions=-x c
+compilerIncludeDirectory=..\
+noWarning=0
+defaultWarning=0
+allWarning=1
+extraWarning=0
+isoWarning=0
+warningsAsErrors=0
+debugType=1
+debugLevel=2
+exceptionEnabled=1
+runtimeTypeEnabled=1
+optimizeLevel=0
+
+// linker
+libraryPath=
+outputFilename=bin\ioapi_gnu_d.exe
+libraries=
+extraLinkerOptions=
+ignoreStartupFile=0
+ignoreDefaultLibs=0
+stripExecutableFile=0
+
+// archive
+extraArchiveOptions=
+
+//resource
+resourcePreprocessor=
+resourceIncludeDirectory=
+extraResourceOptions=
+
+[Release]
+// compiler 
+workingDirectory=
+arguments=
+intermediateFilesDirectory=release
+outputFilesDirectory=release
+compilerPreprocessor=
+extraCompilerOptions=-x c
+compilerIncludeDirectory=..\
+noWarning=0
+defaultWarning=0
+allWarning=1
+extraWarning=0
+isoWarning=0
+warningsAsErrors=0
+debugType=0
+debugLevel=1
+exceptionEnabled=1
+runtimeTypeEnabled=1
+optimizeLevel=4
+
+// linker
+libraryPath=
+outputFilename=bin\ioapi_gnu.exe
+libraries=
+extraLinkerOptions=
+ignoreStartupFile=0
+ignoreDefaultLibs=0
+stripExecutableFile=1
+
+// archive
+extraArchiveOptions=
+
+//resource
+resourcePreprocessor=
+resourceIncludeDirectory=
+extraResourceOptions=
+
+[Source]
+1=SRC\app.c
+2=..\UNZIP\ioapi.c
+[Header]
+[Resource]
+[Other]
+[History]

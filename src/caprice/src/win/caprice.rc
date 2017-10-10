@@ -1,0 +1,6 @@
+AMSDOS                  ROM     DISCARDABLE     "res\\amsdos.rom"
+CPC464                  ROM     DISCARDABLE     "res\\cpc464.rom"
+CPC664                  ROM     DISCARDABLE     "res\\cpc664.rom"
+CPC6128                 ROM     DISCARDABLE     "res\\cpc6128.rom"
+UTOPIA                  ROM     DISCARDABLE     "res\\utopia.rom"
+PROTEXT                 ROM     DISCARDABLE     "res\\protext.rom"

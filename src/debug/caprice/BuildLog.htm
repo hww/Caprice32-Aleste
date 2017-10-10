@@ -1,0 +1,61 @@
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=windows-1251">
+</head>
+<body>
+<pre>
+<table width=100% bgcolor=#CFCFE5><tr> <td> <font face=arial size=+3>
+Build Log
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+<h3>------- Build started: Project: caprice, Configuration: Debug|Win32 -------
+</h3>
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Command Lines
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Creating temporary file "d:\Website\Caprice32\debug\caprice\RSP00009F.rsp" with contents
+[
+/Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /GF /FD /EHsc /RTC1 /MDd /GS /YX"stdafx.h" /Fp".\..\debug\caprice/caprice.pch" /Fo".\..\debug\caprice/" /Fd".\..\debug\caprice/" /W3 /c /Zi /TC
+\Website\Caprice32\emushell\emushell.c
+\Website\Caprice32\ioapi\ioapiw.c
+\Website\Caprice32\cfgapi\cfg_reg.c
+\Website\Caprice32\cfgapi\cfg_file.c
+.\src\contrib\src\app.c
+]
+Creating command line "cl.exe @d:\Website\Caprice32\debug\caprice\RSP00009F.rsp /nologo"
+Creating temporary file "d:\Website\Caprice32\debug\caprice\RSP0000A0.rsp" with contents
+[
+/Od /I "..\zlib" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /GF /FD /EHsc /RTC1 /MDd /GS /YX"stdafx.h" /Fp".\..\debug\caprice/caprice.pch" /Fo".\..\debug\caprice/" /Fd".\..\debug\caprice/" /W3 /c /Zi
+\Website\Caprice32\ioapi\unzip\ioapi.c
+]
+Creating command line "cl.exe @d:\Website\Caprice32\debug\caprice\RSP0000A0.rsp /nologo"
+Creating command line "rc.exe /d "_DEBUG" /l 0x409 /I "src\win" /fo".\..\debug\caprice/caprice.res" .\src\win\caprice.rc"
+Creating temporary file "d:\Website\Caprice32\debug\caprice\RSP0000A1.rsp" with contents
+[
+/OUT:"..\bin/cap32_d.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"..\lib" /LIBPATH:"..\sdl\lib" /DEBUG /PDB:".\..\debug\caprice/cap32_d.pdb" /SUBSYSTEM:WINDOWS /MACHINE:X86 sdl.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib \Website\Caprice32\lib\caprice_d.lib \website\caprice32\zlib\lib\zlib32std.lib
+\Website\Caprice32\debug\caprice\app.obj
+\Website\Caprice32\debug\caprice\caprice.res
+\Website\Caprice32\debug\caprice\cfg_file.obj
+\Website\Caprice32\debug\caprice\cfg_reg.obj
+\Website\Caprice32\debug\caprice\ioapi.obj
+\Website\Caprice32\debug\caprice\ioapiw.obj
+\Website\Caprice32\debug\caprice\emushell.obj
+]
+Creating command line "link.exe @d:\Website\Caprice32\debug\caprice\RSP0000A1.rsp"
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Output Window
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>Compiling...
+emushell.c
+ioapiw.c
+cfg_reg.c
+cfg_file.c
+app.c
+Compiling...
+ioapi.c
+Compiling resources...
+Linking...
+LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
+</pre></table><table width=100% bgcolor=#DFDFE5><tr><td><font face=arial size=+2>
+Results
+</font></table><table width=* cellspacing=0 cellpadding=0><tr><td width=0 bgcolor=#EDEDF5>&nbsp;</td><td width=0 bgcolor=#FFFFFF>&nbsp;</td><td width=*><pre>
+Build log was saved at "file://d:\Website\Caprice32\debug\caprice\BuildLog.htm"
+caprice - 0 error(s), 1 warning(s)</pre></table><table   width=100% height=20 bgcolor=#CFCFE5><tr><td><font face=arial size=+2>
+</font></table></body></html>
