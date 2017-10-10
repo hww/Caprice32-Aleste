@@ -43,3 +43,7 @@ The display listing of files. And run one of games: LEO, VALEY, VKILLER. As usua
 Same as expained abow you can run _Power Writer_ text editor (PW, PW211), or _Debugger_ (DBG) 
 
 The english version of debugger's manual you can find here [Aleste 520EX](https://github.com/hww/Aleste520EX)
+
+## Other emulators
+
+There are other emlators of Aleste 520EX just find it by any internet search service.
