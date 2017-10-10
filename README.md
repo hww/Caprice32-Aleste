@@ -21,7 +21,7 @@ The simulator can load 720 KB FAT disk image witch you can make with PC or MSX c
 - Magic Sound can have problems with frequency precision
 
 ## How to control emulator
-
+```
 F1-F5 are F1-F5 of the Aleste
 HOME — Aleste HELP button
 INSERT — Aleste INSERT
@@ -37,7 +37,7 @@ CTRL + SHIFT + F10 — toggle FPS counter
 SYSREQ — screenshot
 PAUSE — pause
 F11 — exit
-
+```
 ## How to play Aleste music
 
 After boot you will see command prompt
