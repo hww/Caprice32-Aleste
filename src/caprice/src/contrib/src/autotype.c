@@ -49,6 +49,7 @@ typedef struct
 /* this table is not complete */
 static const ASCII_TO_CPCKEY_MAP ASCIIToCPCMap[]=
 {	   
+
 	{ '1'       , CPC_KEY_1    , CPC_KEY_NULL } ,
 	{ '!'       , CPC_KEY_1    , CPC_KEY_SHIFT} ,
 	   
@@ -195,6 +196,7 @@ static const ASCII_TO_CPCKEY_MAP ASCIIToCPCMap[]=
 	{ '?'       , CPC_KEY_BACKSLASH, CPC_KEY_SHIFT} ,
 
 	{ ' ', CPC_KEY_SPACE, CPC_KEY_NULL } ,
+
 };
 
 #ifndef _countof
