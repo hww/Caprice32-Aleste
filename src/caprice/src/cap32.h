@@ -26,7 +26,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 
-//#define DEBUG
+#define DEBUG
 //#define DEBUG_CRTC
 //#define DEBUG_CRTC_ONLY_ALESTE
 //#define DEBUG_FDC
@@ -34,7 +34,7 @@
 //#define DEBUG_NO_VIDEO
 //#define DEBUG_TAPE
 //#define DEBUG_Z80
-//#define DEBUG_CRT_WRITE
+#define DEBUG_CRT_WRITE
 //#define DEBUG_ALESTE_EXTEND
 //#define DEBUG_ALESTE_MAPPER
 //#define DEBUG_ALESTE_PALETE

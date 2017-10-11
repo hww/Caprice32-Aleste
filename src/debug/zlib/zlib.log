@@ -1,0 +1,16 @@
+﻿  adler32.c
+  crc32.c
+  deflate.c
+  inffast.c
+  inflate.c
+  inftrees.c
+  trees.c
+  zutil.c
+  Generating Code...
+  compress.c
+compress.c(23): warning C4131: 'compress2': uses old-style declarator
+compress.c(63): warning C4131: 'compress': uses old-style declarator
+compress.c(76): warning C4131: 'compressBound': uses old-style declarator
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1369,5): warning MSB8012: TargetPath(D:\projects\github\Caprice32-Aleste\src\zlib\.\..\debug\zlib\zlib.lib) does not match the Library's OutputFile property value (D:\projects\github\Caprice32-Aleste\src\lib\libz_d.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(1371,5): warning MSB8012: TargetName(zlib) does not match the Library's OutputFile property value (libz_d). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+  zlib.vcxproj -> D:\projects\github\Caprice32-Aleste\src\zlib\.\..\debug\zlib\zlib.lib
