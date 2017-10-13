@@ -8,7 +8,7 @@
 
 # Designate location of target disk
 
-DISK="../../disk/alestedos-dev.dsk"
+DISK="../../disk/tests-msx.dsk"
 
 #Compile files
 

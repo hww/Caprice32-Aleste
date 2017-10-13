@@ -8,7 +8,7 @@
 
 # Designate location of target disk
 
-DISK=../../bin/disk/tests.dsk
+DISK=../../disk/tests-amsdos.dsk
 
 #Compile files
 

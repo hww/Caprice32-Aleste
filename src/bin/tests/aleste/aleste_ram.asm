@@ -45,26 +45,26 @@ DEFINE_END_TEST
 
 aleste_ram_7c:
 	ld d,&7c
-	jr aleste_ram
+	jr cpc_ram
 
 aleste_ram_7d:
 	ld d,&7d
-	jr aleste_ram
+	jr cpc_ram
 
 aleste_ram_7e:
 	ld d,&7e
-	jr aleste_ram
+	jr cpc_ram
 
 aleste_ram_7f:
 	ld d,&7f
-	jr aleste_ram
+	jr cpc_ram
 
 ;; ================================================
 ;; single bank test function
 ;; arguments
 ;; d - is mapper port address 7c..7f 
 ;; ================================================
-aleste_ram:
+cpc_ram:
 
 
 	push de
@@ -155,50 +155,59 @@ ar3:
 ;; test Aleste mapper page 0000
 aleste_ram_0000:
 	ld d,&7c
-	jr aleste_ram2
+	jr aleste_ram
 
 ;; test Aleste mapper page 4000
 aleste_ram_4000:
 	ld d,&7d
-	jr aleste_ram2
+	jr aleste_ram
 
 ;; test Aleste mapper page 8000
 aleste_ram_8000:
 	ld d,&7e
-	jr aleste_ram2
+	jr aleste_ram
 	
 ;; test Aleste mapper page C0000
 aleste_ram_c000:
 	ld d,&7f
-	jr aleste_ram2
-	
+	jr aleste_ram
+;; ---------------------------------------------------------
 ;; test one page access with Aleste mapper
 ;; D is the mapper address
-aleste_ram2:
+;; ---------------------------------------------------------
+aleste_ram:
 	push de
 	call ram_init	;; fill all the pages by it's number
 	pop de
 
+	di
+	
 	ld ix,result_buffer
 
-	di
+	;;;---------------
+	;; enable mapper mod
 	ld bc,&fabf
-	ld a,%1100	;; enable mapper mod
+	ld a,%1100	
 	out (c),a
 	
+	;;;---------------
 	;;;  iterate over all pages
 	ld b,64		;; 64 pages of mapper 512KB
 	xor a		;; A = 0,1,....,63
 arm1:
 	push bc
 	push af
+	;; ---------------
+	;; page number to the mapper
 	ld b,d
 	or %1100000
-	out (c),a	;; page number to the mapper
+	out (c),a	
 
+	;; ---------------
 	call read_mapper ;; read from mapper
 	
 	call read_ram ;; read from ram
+	;; ---------------
 
 	pop af
 	pop bc
@@ -346,11 +355,11 @@ ram_sel:
 	;; ................ etc
 	
 ram_init:
+
 	ld hl,&5000
-;	ld b,32			;; Original test! 32 pages
-;	ld a,31			;; Original test! RAM_5 BANK_6	
-	ld b,4			;; Aleste supports only CPC128
-	ld a,0			;; Aleste supports only CPC128
+	ld b,32			;; Original test! 32 pages
+	ld a,&1F		;; Original test! RAM_7 BANK_7
+
 ri1:
 	call ram_sel	;; RAM_5 BANK_6 at 4000-7FFF
 	push af
@@ -358,7 +367,7 @@ ri1:
 	ld (hl),a		;; MEM[50000] = a + 5
 	pop af
 	
-	
+
 	;; copy this code to target page
 	;;push hl
 	;;push de
@@ -371,7 +380,7 @@ ri1:
 	;;pop de
 	;;pop hl
 	
-	dec a			;; a = 30, 2F, 2E 
+	dec a			;; a = 1F,1E,...,2,1,0
 	djnz ri1
 	
 	
@@ -414,17 +423,17 @@ ri1:
 	push de
 	push bc
 
-	ld hl, &9001
+	ld hl, start
 	ld de, &1001
 	ld bc, result_buffer - start
 	ldir			;; to RAM_0
 
-	ld hl, &9001	;; origin
+	ld hl, start	;; origin
 	ld de, &5001
 	ld bc, result_buffer - start
 	ldir			;; to RAM_1
 
-	ld hl, &9001	;; origin
+	ld hl, start	;; origin
 	ld de, &d001	
 	ld bc, result_buffer - start
 	ldir			;; to RAM_3

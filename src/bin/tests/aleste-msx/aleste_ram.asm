@@ -347,10 +347,9 @@ ram_sel:
 	
 ram_init:
 	ld hl,&5000
-;	ld b,32			;; Original test! 32 pages
-;	ld a,31			;; Original test! RAM_5 BANK_6	
-	ld b,4			;; Aleste supports only CPC128
-	ld a,0			;; Aleste supports only CPC128
+	ld b,&20			;; Original test! 32 pages
+	ld a,&1F			;; Original test! RAM_7 BANK_7	
+
 ri1:
 	call ram_sel	;; RAM_5 BANK_6 at 4000-7FFF
 	push af
@@ -371,7 +370,7 @@ ri1:
 	;;pop de
 	;;pop hl
 	
-	dec a			;; a = 30, 2F, 2E 
+	dec a			;; a = 1F,1E,1D,...,2,1,0
 	djnz ri1
 	
 	
