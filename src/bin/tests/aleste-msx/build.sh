@@ -27,8 +27,8 @@ done
 cat files.txt | while read line
 do
     IFS=, read file1 file2 <<< $line
-    ./DISKMGR.exe -A -F -C $DISK  "$(basename "$file2").com"
-    #./cpcxfs.exe $DISK -f -p "$(basename "$file1").bin" "$(basename "$file2")"
+    #./DISKMGR.exe -A -F -C $DISK  "$(basename "$file2").com"
+    ./wrdsk $DISK "$(basename "$file2").com"
 done
 
 #./cpcxfs.exe $DISK -f -p  alestesystem/BDOS.SYS
