@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Bash on Ubuntu on Windows script
+
 # ----------------------------------------------------
 # Requires the PASMO assembler.
 # Use "Bash on Ubuntu on Windows" inside windows
